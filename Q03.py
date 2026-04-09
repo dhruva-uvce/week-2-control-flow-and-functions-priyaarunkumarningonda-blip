@@ -11,3 +11,9 @@
 #   5 x 10 = 50
 
 # --- YOUR CODE HERE ---
+n_str = input("Enter a number: ")
+n = int(n_str)
+
+for i in range(1, 11):
+    result = n * i
+    print(f"{n} x {i} = {result}")
