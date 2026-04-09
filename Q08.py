@@ -7,3 +7,13 @@
 # Sample Output:  Sum of digits of 9876 = 30
 
 # --- YOUR CODE HERE ---
+number = int(input("Enter a number: "))
+sum_digits = 0
+temp = number
+
+while temp > 0:
+    digit = temp % 10
+    sum_digits += digit
+    temp //= 10
+
+print(f"Sum of digits of {number} = {sum_digits}")
