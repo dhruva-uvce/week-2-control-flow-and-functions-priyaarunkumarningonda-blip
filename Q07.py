@@ -10,3 +10,13 @@
 # Sample Output 2:  Reversed: 5
 
 # --- YOUR CODE HERE ---
+number = int(input("Enter a number: "))
+reversed_num = 0
+original_num = number
+
+while number > 0:
+    digit = number % 10
+    reversed_num = reversed_num * 10 + digit
+    number //= 10
+
+print(f"Reversed: {reversed_num}")
